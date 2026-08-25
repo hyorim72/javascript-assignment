@@ -8,3 +8,4 @@ const getMovieMessage = (title, voteAverage) => {
 const message = getMovieMessage("인셉션", 8.4);
 console.log(message);
 
+// 4. 제목 변경하기
