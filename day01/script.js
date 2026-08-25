@@ -1,4 +1,4 @@
-// 과제1.영화 데이터 변수 만들기
+//과제 1.영화 데이터 변수 만들기
 const title = "인터스텔라";
 const voteAverage = 8.7;
 const voteCount = 32000;
@@ -6,7 +6,7 @@ const popularity = 150.5;
 const releaseDate = "2014-11-05";
 const originalLanguage = "en";
 
-// 과제2.영화 테이터 Console출력하기
+//과제 2.영화 테이터 Console출력하기
 console.log(title);
 console.log(voteAverage);
 console.log(voteCount);
@@ -35,5 +35,4 @@ console.log(`평점: ${voteAverage}`);
 console.log(`개봉일: ${releaseDate}`);
 
 //과제 7.영화 소개 문장 만들기
-// 07. 영화 소개 문장 만들기
 console.log(`${title}는 ${releaseDate}에 개봉한 영화이며, 현재 평점은 ${voteAverage}점이고 ${voteCount}명이 평가했습니다.`);
