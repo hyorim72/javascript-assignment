@@ -11,3 +11,7 @@ console.log(message);
 // 4. 제목 변경하기
 const title = document.querySelector(".title");
 title.textContent = "오늘의 추천 영화";
+
+// 5. 설명 영역 강조하기
+const description = document.querySelector(".description");
+description.classList.add("text-primary", "fw-bold");
