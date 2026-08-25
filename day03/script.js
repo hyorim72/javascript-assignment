@@ -9,3 +9,5 @@ const message = getMovieMessage("인셉션", 8.4);
 console.log(message);
 
 // 4. 제목 변경하기
+const title = document.querySelector(".title");
+title.textContent = "오늘의 추천 영화";
