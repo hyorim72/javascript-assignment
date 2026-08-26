@@ -23,3 +23,12 @@ const firstMovie = document.createElement("div");
 firstMovie.textContent = message;
 firstMovie.classList.add("border", "rounded", "p-3", "mb-2");
 movieList.append(firstMovie);
+
+// 7. 영화 하나 더 추가하기
+
+const secondMessage = getMovieMessage("인터스텔라", 8.7);
+
+const secondMovie = document.createElement("div");
+secondMovie.textContent = secondMessage;
+secondMovie.classList.add("border", "rounded", "p-3", "mb-2");
+movieList.append(secondMovie);
