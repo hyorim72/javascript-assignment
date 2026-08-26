@@ -6,3 +6,13 @@ const recommendresult = document.querySelector("#recommend-result");
 recommendButton.addEventListtener("click", () => {
   recommendResult.textContent = "오늘의 추천 영화는 인셉션입니다.";
 });
+
+// 3.form 제출 처리하기
+const searchFrom = document.querySelector("#search-from");
+const searchInput = document.querySelector("#seach-input");
+const searchResult = document.querySelector("#search-result");
+
+searchFrom.addEventListener("submit", (event) => {
+  event.preventDefault();
+  searchResult.textContent = `검색한 영화: ${searchInput.value}`;
+});
