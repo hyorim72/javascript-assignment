@@ -35,4 +35,4 @@ movieList.append(secondMovie);
 
 // 8. 요소 삭제해보기
 
-secondMovie.remove();
+//secondMovie.remove();
