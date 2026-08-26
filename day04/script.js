@@ -51,3 +51,13 @@ const movies = [
 movies.forEach((movie) => {
   console.log(`${movie.title}의 평점은 ${movie.voteAverage}점입니다.`);
 });
+
+// 7. 영화 목록을 화면에 출력하기
+
+const movieList = document.querySelector("#movie-list");
+
+movies.forEach((movie) => {
+  const li = document.createElement("li");
+  li.textContent = movie.title;
+  movieList.append(li);
+});
