@@ -21,6 +21,10 @@ searchForm.addEventListener("submit", (event) => {
   }
 
   searchResult.textContent = `검색한 영화: ${searchInput.value}`;
+
+  searchInput.value = "";
 });
 
-// 4. 빈 검색어 처리하기 (3번 사이 끼어넣기)
+// 4. 빈 검색어 처리하기 (3번 사이 끼어넣기)'
+
+// 5. 검색 후 Input 비우기
