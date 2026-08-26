@@ -25,6 +25,29 @@ searchForm.addEventListener("submit", (event) => {
   searchInput.value = "";
 });
 
-// 4. 빈 검색어 처리하기 (3번 사이 끼어넣기)'
+// 4. 빈 검색어 처리하기 (3번 사이 끼어넣기)
 
-// 5. 검색 후 Input 비우기
+// 5. 검색 후 Input 비우기 (searchResult.textContent = `검색한 영화: ${searchInput.value}`; 밑에 부분)
+
+// 6. forEach()로 영화 목록 출력하기
+
+// 06. forEach()로 영화 목록 Console에 출력하기
+
+const movies = [
+  {
+    title: "인셉션",
+    voteAverage: 8.4,
+  },
+  {
+    title: "인터스텔라",
+    voteAverage: 8.7,
+  },
+  {
+    title: "다크 나이트",
+    voteAverage: 9.0,
+  },
+];
+
+movies.forEach((movie) => {
+  console.log(`${movie.title}의 평점은 ${movie.voteAverage}점입니다.`);
+});
