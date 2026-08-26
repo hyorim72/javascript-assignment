@@ -1,18 +1,18 @@
 // 2. 버튼의 Click Event 처리하기
 
-const recommendbutton = document.querySelector("#recommend-button");
-const recommendresult = document.querySelector("#recommend-result");
+const recommendButton = document.querySelector("#recommend-button");
+const recommendResult = document.querySelector("#recommend-result");
 
-recommendButton.addEventListtener("click", () => {
+recommendButton.addEventListener("click", () => {
   recommendResult.textContent = "오늘의 추천 영화는 인셉션입니다.";
 });
 
 // 3.form 제출 처리하기
-const searchFrom = document.querySelector("#search-from");
-const searchInput = document.querySelector("#seach-input");
+const searchForm = document.querySelector("#search-form");
+const searchInput = document.querySelector("#search-input");
 const searchResult = document.querySelector("#search-result");
 
-searchFrom.addEventListener("submit", (event) => {
+searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   searchResult.textContent = `검색한 영화: ${searchInput.value}`;
 });
