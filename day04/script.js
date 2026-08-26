@@ -14,5 +14,13 @@ const searchResult = document.querySelector("#search-result");
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
+
+  const keyword = searchInput.value.trim();
+  if (keyword === "") {
+    return;
+  }
+
   searchResult.textContent = `검색한 영화: ${searchInput.value}`;
 });
+
+// 4. 빈 검색어 처리하기 (3번 사이 끼어넣기)
