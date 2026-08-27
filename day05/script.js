@@ -22,3 +22,13 @@ const movies = [
 const foundMovie = movies.find((movie) => movie.title === "인터스텔라");
 console.log(`${foundMovie.title}의 평점은 ${foundMovie.voteAverage}점입니다.`);
 
+// 3. filter()로 평점이 높은 영화 찾기
+
+const filteredMovies = movies.filter((movie) => {
+  return movie.voteAverage >= 8.5;
+});
+
+console.log(filteredMovies);
+// movies는 여러 영화가 들어가있는 복수형아다. 꺼내온 1개의 영화 평점은 8.5이상인지 검사한다.
+
+
