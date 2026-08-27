@@ -17,7 +17,8 @@ const movies = [
   },
 ];
 
-// 2. find로 영화 찾기
+// 2. find로 영화 찾기-
 
 const foundMovie = movies.find((movie) => movie.title === "인터스텔라");
 console.log(`${foundMovie.title}의 평점은 ${foundMovie.voteAverage}점입니다.`);
+
