@@ -31,4 +31,9 @@ const filteredMovies = movies.filter((movie) => {
 console.log(filteredMovies);
 // movies는 여러 영화가 들어가있는 복수형아다. 꺼내온 1개의 영화 평점은 8.5이상인지 검사한다.
 
+// 4. map()으로 영화 제목만 가져오기
 
+const movieTitles = movies.map((movie) => {
+  return movie.title;
+});
+console.log(movieTitles);
