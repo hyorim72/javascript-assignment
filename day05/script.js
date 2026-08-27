@@ -49,3 +49,11 @@ searchForm.addEventListener("submit", (event) => {
   const title = searchInput.value.trim().toLowerCase();
   searchResult.textContent = `검색어: ${title}`;
 });
+
+// 6. 어떤 배열 메서드를 사용하지 구분하가
+
+A: find();
+
+B: filter();
+
+C: map();
