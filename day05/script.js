@@ -37,3 +37,15 @@ const movieTitles = movies.map((movie) => {
   return movie.title;
 });
 console.log(movieTitles);
+
+// 5. 검색어 가공하기
+const searchForm = document.querySelector("#search-form");
+const searchInput = document.querySelector("#search-input");
+const searchResult = document.querySelector("#search-result");
+
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const title = searchInput.value.trim().toLowerCase();
+  searchResult.textContent = `검색어: ${title}`;
+});
