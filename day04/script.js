@@ -31,8 +31,6 @@ searchForm.addEventListener("submit", (event) => {
 
 // 6. forEach()로 영화 목록 출력하기
 
-// 06. forEach()로 영화 목록 Console에 출력하기
-
 const movies = [
   {
     title: "인셉션",
