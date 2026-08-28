@@ -20,3 +20,6 @@ console.log(typeof movieJson);
 const paraedMovie = JSON.parse(movieJson);
 console.log(paraedMovie);
 console.log(typeof paraedMovie);
+
+
+// 05. 
