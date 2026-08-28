@@ -29,7 +29,8 @@ const filteredMovies = movies.filter((movie) => {
 });
 
 console.log(filteredMovies);
-// movies는 여러 영화가 들어가있는 복수형아다. 꺼내온 1개의 영화 평점은 8.5이상인지 검사한다.
+// movies는 여러 영화가 들어가있는 복수형이다. 꺼내온 1개의 영화 평점은 8.5이상인지 검사한다.
+
 
 // 4. map()으로 영화 제목만 가져오기
 
@@ -39,6 +40,7 @@ const movieTitles = movies.map((movie) => {
 console.log(movieTitles);
 
 // 5. 검색어 가공하기
+
 const searchForm = document.querySelector("#search-form");
 const searchInput = document.querySelector("#search-input");
 const searchResult = document.querySelector("#search-result");
@@ -57,3 +59,15 @@ A: find();
 B: filter();
 
 C: map();
+
+
+
+
+
+
+
+
+
+
+
+
