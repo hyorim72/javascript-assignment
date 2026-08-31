@@ -37,4 +37,8 @@ console.log(director);
 const directorName = director ?? "감독 정보 없음";
 console.log(directorName);
 
+// 06.  ||와 ??의 차이 확인하기
 
+const { vote_count } = movie;
+console.log(vote_count || 100);
+console.log(vote_count ?? 100);
