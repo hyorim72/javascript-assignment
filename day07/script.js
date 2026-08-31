@@ -31,3 +31,10 @@ console.log(secondGenre);
 
 const director = movie.detail?.director;
 console.log(director);
+
+// 05. 기본값 사용하기
+
+const directorName = director ?? "감독 정보 없음";
+console.log(directorName);
+
+
