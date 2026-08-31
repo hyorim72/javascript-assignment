@@ -20,3 +20,10 @@ console.log(`평점: ${vote_average}`);
 
 const { title: movieTitle } = movie;
 console.log(movieTitle);
+
+// 03. 배열 구조 분해 할당하기
+
+const [firstGenre, secondGenre] = genres;
+console.log(firstGenre);
+console.log(secondGenre);
+
