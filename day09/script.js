@@ -14,15 +14,9 @@ function createMovieCard(movie) {
 
   const { title, vote_average, poster_path } = movie;
 
-
- // TODO 2. movie-card 클래스를 가진 div 요소를 만드세요.
-
-
+  // TODO 2. movie-card 클래스를 가진 div 요소를 만드세요.
 
   // TODO 3. 포스터 img 요소를 만들고 src와 alt를 설정하세요.
-
-
-
 
   // poster_path가 없으면 대체 이미지를 사용하세요.
 
