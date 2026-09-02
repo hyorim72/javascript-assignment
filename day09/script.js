@@ -21,6 +21,13 @@ function createMovieCard(movie) {
 
   // TODO 3. 포스터 img 요소를 만들고 src와 alt를 설정하세요.
 
+  const poster = document.createElement("img");
+  poster.src = poster_path
+    ? `https://image.tmdb.org/t/p/w500${poster_path}`
+    : "https://placehold.co/500x750?text=No+Image";
+
+  poster.alt = ` ${title} 포스터`;
+
   // poster_path가 없으면 대체 이미지를 사용하세요.
 
   // TODO 4. 영화 제목 h3 요소와 평점 p 요소를 만드세요.
