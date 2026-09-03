@@ -31,10 +31,19 @@ function createMovieCard(movie) {
   const rating = document.createElement("p");
   rating.textContent = `평점 ${vote_average}`;
 
-  // // TODO 5. 만든 요소를 card에 추가하고 card를 반환하세요.
+  // TODO 5. 만든 요소를 card에 추가하고 card를 반환하세요.
   card.appendChild(poster);
   card.appendChild(titleEl);
   card.appendChild(rating);
 
   return card;
+}
+
+function renderMovies(movies) {
+  // TODO 6. forEach()로 영화 목록을 반복하면서
+  // createMovieCard()로 만든 카드를 container에 추가하세요.
+  movies.forEach((movie) => {
+    const card = createMovieCard(movie);
+    container.appendChild(card);
+  });
 }
