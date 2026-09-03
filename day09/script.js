@@ -30,3 +30,11 @@ function createMovieCard(movie) {
 
   const rating = document.createElement("p");
   rating.textContent = `평점 ${vote_average}`;
+
+  // // TODO 5. 만든 요소를 card에 추가하고 card를 반환하세요.
+  card.appendChild(poster);
+  card.appendChild(titleEl);
+  card.appendChild(rating);
+
+  return card;
+}
