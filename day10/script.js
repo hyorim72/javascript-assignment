@@ -58,6 +58,8 @@ async function getPopularMovies() {
     }
     // TODO 5. response.json()으로 데이터를 변환하세요.
 
+    const data = await response.json();
+
     // TODO 6. Loading 문구를 지우세요.
 
     // TODO 7. data.results를 renderMovies()에 전달하세요.
