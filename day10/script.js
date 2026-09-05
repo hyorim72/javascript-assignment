@@ -52,6 +52,10 @@ async function getPopularMovies() {
 
     // TODO 4. response.ok가 false라면 오류 안내 문구를 표시하고 return으로 함수를 종료하세요.
 
+    if (!response.ok) {
+      container.textContent = "영화 정보를 불러오지 못했습니다.";
+      return;
+    }
     // TODO 5. response.json()으로 데이터를 변환하세요.
 
     // TODO 6. Loading 문구를 지우세요.
