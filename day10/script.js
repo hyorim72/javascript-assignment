@@ -62,6 +62,9 @@ async function getPopularMovies() {
 
     // TODO 6. Loading 문구를 지우세요.
 
+    container.textContent = "";
+    renderMovies(data.results);
+
     // TODO 7. data.results를 renderMovies()에 전달하세요.
   } catch (error) {
     // TODO 8. 사용자에게 오류 안내 문구를 표시하세요.
