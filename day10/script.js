@@ -66,9 +66,12 @@ async function getPopularMovies() {
     renderMovies(data.results);
 
     // TODO 7. data.results를 renderMovies()에 전달하세요.
+    // 6번의 답
   } catch (error) {
     // TODO 8. 사용자에게 오류 안내 문구를 표시하세요.
+    container.textContent = "영화 정보를 불러오지 못했습니다.";
     // TODO 9. console.error(error)로 실제 오류를 출력하세요.
+    console.error(error);
   }
 }
 
