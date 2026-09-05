@@ -49,7 +49,7 @@ async function getPopularMovies() {
 
     // TODO 3. fetch()와 await를 사용해 Response를 받으세요.
 
-    
+
 
     // TODO 4. response.ok가 false라면 오류 안내 문구를 표시하고 return으로 함수를 종료하세요.
 
