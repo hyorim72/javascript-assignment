@@ -42,6 +42,9 @@ function renderKeywords() {
 
     removeButton.addEventListener("click", () => {
       // TODO 09. 최근 검색어 삭제하기
+      keywords = keywords.filter((itemKeyword) => itemKeyword !== keyword);
+      localStorage.setItem("keywords", JSON.stringify(keywords));
+      renderKeywords();
     });
 
     item.append(keywordButton, removeButton);
@@ -124,7 +127,7 @@ async function searchMovies(keyword) {
 
     // TODO 06. 최근 검색어 배열 localStorage에 저장하기
 
-    localStorage.setItem("keywored", Json.stringify(keywords));
+    localStorage.setItem("keywored", JSON.stringify(keywords));
 
     // TODO 07. 최근 검색어 목록 다시 그리기
 
