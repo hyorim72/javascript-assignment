@@ -128,6 +128,8 @@ async function searchMovies(keyword) {
 
     // TODO 07. 최근 검색어 목록 다시 그리기
 
+    renderKeywords();
+
     renderMovies(data.results);
   } catch (error) {
     container.textContent = "영화 정보를 불러오지 못했습니다.";
