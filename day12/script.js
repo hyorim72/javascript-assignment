@@ -124,6 +124,8 @@ async function searchMovies(keyword) {
 
     // TODO 06. 최근 검색어 배열 localStorage에 저장하기
 
+    localStorage.setItem("keywored", Json.stringify(keywords));
+
     // TODO 07. 최근 검색어 목록 다시 그리기
 
     renderMovies(data.results);
