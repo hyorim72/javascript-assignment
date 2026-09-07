@@ -16,7 +16,9 @@ const savedKeywords = localStorage.getItem("keywords");
 
 // TODO 03. 저장된 최근 검색어 배열 가져오기
 
-let keywords = savedKeywords ? JSON.parse(savedKeywords) : []
+let keywords = savedKeywords ? JSON.parse(savedKeywords) : [];
+// savedKeywords  ?  JSON.parse(savedKeywords)  :  []
+//  조건           ?     참일 때                  : 거짓일 때
 
 
 function renderKeywords() {
