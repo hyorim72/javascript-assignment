@@ -20,7 +20,6 @@ let keywords = savedKeywords ? JSON.parse(savedKeywords) : [];
 // savedKeywords  ?  JSON.parse(savedKeywords)  :  []
 //  조건           ?     참일 때                  : 거짓일 때
 
-
 function renderKeywords() {
   keywordList.textContent = "";
 
@@ -116,6 +115,8 @@ async function searchMovies(keyword) {
     const data = await response.json();
 
     // TODO 04. 같은 검색어가 있다면 기존 위치에서 제거하기
+
+    keywords = keywords.filter((itemKeyword) => itemKeyword !== keyword);
 
     // TODO 05. 최신 검색어를 배열 맨 앞에 추가하기
 
